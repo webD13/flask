@@ -1,27 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
-pip install paddlepaddle
-
-
-# In[2]:
-
-
-pip install --user "paddleocr>=2.0.1"
-
-
-# In[3]:
-
-
-pip install flask boto3 pdf2image paddleocr Pillow
-
-
-# In[ ]:
-
-
 import webbrowser
 from flask import Flask, request, jsonify
 from PIL import Image
@@ -119,12 +95,6 @@ def process_image():
 if __name__ == '__main__':
     # Start the Flask application
     app.run(host='0.0.0.0', port=80, threaded=False)
-
-    # Open the default web browser to the Flask application URL
-    webbrowser.open('http://localhost')
-
-
-# In[ ]:
 
 
 
